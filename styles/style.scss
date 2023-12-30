@@ -1,5 +1,6 @@
 @import "normalize.scss";
 @import url('https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +9,6 @@
 }
 
 //SECTION 1
-
 section {
     position: relative;
     overflow: hidden;
@@ -135,8 +135,6 @@ footer {
 
 
 //SECTION 2
-
-
 .choose {
     
     .container {
@@ -201,7 +199,6 @@ footer {
 }
 
 // SECTION 3
-
 .cta {
     
     
@@ -255,10 +252,6 @@ footer {
 }
 
 //SECTION 4
-
-
-
-
 .cta2 {
     
     .container {
@@ -309,5 +302,48 @@ footer {
         max-width: 543px;
         margin: 50px 0 0 0;
 
+    }
+}
+
+//SECTION 5
+.review {
+
+    h2 {
+        padding-bottom: 45px;
+        font-size: 36px;
+        font-family: 'Aleo', serif;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .card {
+        margin-top: 45px;
+        background-color: rgba(#333, 1);
+        display: flex;
+        align-items: center;
+
+        .card-body {
+            padding: 49px 25px 39px 62px;
+            
+        }
+    }
+
+    i {
+        color: #5474FD; 
+        font-size: 36px; 
+        padding-right: 10px;
+    }
+
+    p {
+        color: #E8E8E8; 
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px; 
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
     }
 }
