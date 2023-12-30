@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -305,6 +306,103 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+* {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+  padding: 20vh 0;
+}
+
+.image-background {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-center h1 {
+  margin: 0;
+  font-size: 48px;
+}
+.text-center.scroll-wrapper {
+  padding: 50px 0 0 0;
+}
+
+.navbar {
+  background-color: #5474FD;
+  display: flex;
+  flex-direction: column;
+  min-height: 83px;
+  align-items: center;
+}
+.navbar .container {
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  .navbar .container {
+    display: flex;
+  }
+}
+.navbar .container h2 {
+  font-size: 24px;
+}
+.navbar .navbar-items {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 700px) {
+  .navbar .navbar-items {
+    flex-direction: row;
+  }
+}
+.navbar .navbar-items p {
+  font-family: "Aleo", serif;
+}
+
+form {
+  background-color: #FFF;
+  margin: 0 auto 50px;
+  width: 503px;
+  max-width: 100%;
+  height: 63px;
+  display: flex;
+  padding: 1px;
+}
+form input {
+  display: flex;
+  width: 502px;
+  border: none;
+  color: #999;
+  text-align: center;
+  font-size: 14px;
+}
+form button {
+  background-color: #5474FD;
+  border: none;
+  width: 153px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-family: "Aleo", serif;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
