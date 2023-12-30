@@ -1,7 +1,9 @@
 @import "normalize.scss";
 @import url('https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap');
 * {
-    color: white;
+    padding: 0;
+    margin: 0;
+    color: #FFF;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -201,6 +203,8 @@ footer {
 // SECTION 3
 
 .cta {
+    
+    
     .container {
 
         button {
@@ -245,10 +249,65 @@ footer {
         background-color: rgba(#232323, 0.9);
         padding: 64px 32px;
         max-width: 543px;
+        margin: 50px 0 0 0;
     
     }
 }
 
+//SECTION 4
 
 
 
+
+.cta2 {
+    
+    .container {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            background-color: #5474FD;
+            border: none;
+            width: 228px;
+            height: 63px; 
+            font-family: 'Aleo', serif;
+        }
+    
+        h3 {
+            margin: 0 0 23px 0;
+            color: #E8E8E8;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 1.5px; 
+        }
+    
+        h2 {
+            margin: 0 0 13px 0;
+            color: #FFF;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+        }
+    
+        p {
+            margin: 0 0 46px 0;
+            color: #E8E8E8;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+        }
+        
+    }
+    
+    .card {
+        background-color: rgba(#232323, 0.9);
+        padding: 64px 32px;
+        max-width: 543px;
+        margin: 50px 0 0 0;
+
+    }
+}

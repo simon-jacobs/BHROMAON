@@ -309,7 +309,9 @@ template {
 }
 
 * {
-  color: white;
+  padding: 0;
+  margin: 0;
+  color: #FFF;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -506,6 +508,50 @@ footer {
   background-color: rgba(35, 35, 35, 0.9);
   padding: 64px 32px;
   max-width: 543px;
+  margin: 50px 0 0 0;
+}
+
+.cta2 .container {
+  display: flex;
+  justify-content: flex-end;
+}
+.cta2 .container button {
+  background-color: #5474FD;
+  border: none;
+  width: 228px;
+  height: 63px;
+  font-family: "Aleo", serif;
+}
+.cta2 .container h3 {
+  margin: 0 0 23px 0;
+  color: #E8E8E8;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+}
+.cta2 .container h2 {
+  margin: 0 0 13px 0;
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.cta2 .container p {
+  margin: 0 0 46px 0;
+  color: #E8E8E8;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.cta2 .card {
+  background-color: rgba(35, 35, 35, 0.9);
+  padding: 64px 32px;
+  max-width: 543px;
+  margin: 50px 0 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
