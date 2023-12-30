@@ -8,7 +8,6 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-//SECTION 1
 section {
     position: relative;
     overflow: hidden;
@@ -37,7 +36,6 @@ section {
     }
 }
 
-// GENERAL CONTAINER
 .container {
     width: 1100px;
     max-width: 100%;
@@ -53,25 +51,35 @@ section {
 
     .container {
         align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 28px 0;
 
-        @media (min-width: 700px) {
-            display: flex;
+        @media (min-width: 900px) {
+            flex-direction: row;
         }
 
         h2 {
+            text-align: center;
             font-size: 24px;
+
+            &:hover,
+            &:focus {
+                cursor: pointer;
+                color: #bdc3c7;
+            }
         }
     }
 
     .navbar-items {
-        margin-left: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        min-height: 83px;
-
-        @media (min-width: 700px) {
+        
+        @media (min-width: 900px) {
+            margin-left: auto;
             flex-direction: row;
         }
 
@@ -123,21 +131,18 @@ form {
             color: #bdc3c7;
         }
     }
-
-    img {
-
-    }
 }
 
-//SECTION 2
 .choose {
     
     .container {
-        gap: 110px;
-
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
 
         @media (min-width: 700px) {
-            display: flex;
+            gap: 110px;
+            flex-direction: row;
             align-items: center;
         }
 
@@ -181,19 +186,19 @@ form {
 
         img {
             max-width: 100%;
-            width: 100%;
-            margin-right: 5px;
 
-            @media (min-width: 700px) {
+            @media (min-width: 900px) {
                 &:nth-child(even) {
                     margin-left: 90px;
+                }
+
+                &:nth-child(odd) {
+                    margin-right: 90px;
                 }
             }
         }
     }
 }
-
-// SECTION 3
 
 .search {
     padding: 50px 0;
@@ -243,19 +248,22 @@ form {
     }
 }
 
-
-// SECTION 4
 .spain {
     
-    
     .container {
-
+    
         button {
             background-color: #5474FD;
             border: none;
             width: 228px;
             height: 63px; 
             font-family: 'Aleo', serif;
+
+            &:hover,
+            &:focus {
+                cursor: pointer;
+                color: #bdc3c7;
+            }
         }
     
         h3 {
@@ -285,7 +293,6 @@ form {
             font-weight: 400;
             line-height: 26px;
         }
-        
     }
     
     .card {
@@ -293,65 +300,17 @@ form {
         padding: 64px 32px;
         max-width: 543px;
         margin: 50px 0 0 0;
-    
     }
 }
 
-//SECTION 5
-.spain-two {
+.spain-right {
     
     .container {
         display: flex;
         justify-content: flex-end;
-
-        button {
-            background-color: #5474FD;
-            border: none;
-            width: 228px;
-            height: 63px; 
-            font-family: 'Aleo', serif;
-        }
-    
-        h3 {
-            margin: 0 0 23px 0;
-            color: #E8E8E8;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 26px;
-            letter-spacing: 1.5px; 
-        }
-    
-        h2 {
-            margin: 0 0 13px 0;
-            color: #FFF;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 26px;
-        }
-    
-        p {
-            margin: 0 0 46px 0;
-            color: #E8E8E8;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 26px;
-        }
-        
-    }
-    
-    .card {
-        background-color: rgba(#232323, 0.9);
-        padding: 64px 32px;
-        max-width: 543px;
-        margin: 50px 0 0 0;
-
     }
 }
 
-//SECTION 6
 .review {
 
     h2 {
@@ -367,10 +326,19 @@ form {
         background-color: rgba(#333, 1);
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        @media (min-width: 900px) {
+            flex-direction: row;
+        }
 
-        .card-body {
-            padding: 49px 25px 39px 62px;
-            
+        &-image {
+            max-width: 100%;
+        }
+
+        &-body {
+            padding: 49px 25px 39px 62px;  
         }
     }
 
@@ -394,7 +362,6 @@ form {
     }
 }
 
-//FOOTER
 footer {
     padding: 50px 0;
     background-color: #232323;
@@ -404,6 +371,12 @@ footer {
         font-weight: 700;
         line-height: 26px;
         padding-top: 50px;
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            color: #2980b9;
+        }
     }
 
     p {

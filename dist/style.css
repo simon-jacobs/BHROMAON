@@ -355,25 +355,33 @@ section {
 }
 .navbar .container {
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px 0;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .navbar .container {
-    display: flex;
+    flex-direction: row;
   }
 }
 .navbar .container h2 {
+  text-align: center;
   font-size: 24px;
 }
+.navbar .container h2:hover, .navbar .container h2:focus {
+  cursor: pointer;
+  color: #bdc3c7;
+}
 .navbar .navbar-items {
-  margin-left: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  min-height: 83px;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .navbar .navbar-items {
+    margin-left: auto;
     flex-direction: row;
   }
 }
@@ -418,12 +426,16 @@ form button:hover, form button:focus {
   cursor: pointer;
   color: #bdc3c7;
 }
+
 .choose .container {
-  gap: 110px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 700px) {
   .choose .container {
-    display: flex;
+    gap: 110px;
+    flex-direction: row;
     align-items: center;
   }
 }
@@ -459,12 +471,13 @@ form button:hover, form button:focus {
 }
 .choose-images img {
   max-width: 100%;
-  width: 100%;
-  margin-right: 5px;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .choose-images img:nth-child(even) {
     margin-left: 90px;
+  }
+  .choose-images img:nth-child(odd) {
+    margin-right: 90px;
   }
 }
 
@@ -517,6 +530,10 @@ form button:hover, form button:focus {
   height: 63px;
   font-family: "Aleo", serif;
 }
+.spain .container button:hover, .spain .container button:focus {
+  cursor: pointer;
+  color: #bdc3c7;
+}
 .spain .container h3 {
   margin: 0 0 23px 0;
   color: #E8E8E8;
@@ -549,47 +566,9 @@ form button:hover, form button:focus {
   margin: 50px 0 0 0;
 }
 
-.spain-two .container {
+.spain-right .container {
   display: flex;
   justify-content: flex-end;
-}
-.spain-two .container button {
-  background-color: #5474FD;
-  border: none;
-  width: 228px;
-  height: 63px;
-  font-family: "Aleo", serif;
-}
-.spain-two .container h3 {
-  margin: 0 0 23px 0;
-  color: #E8E8E8;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 1.5px;
-}
-.spain-two .container h2 {
-  margin: 0 0 13px 0;
-  color: #FFF;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-}
-.spain-two .container p {
-  margin: 0 0 46px 0;
-  color: #E8E8E8;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-}
-.spain-two .card {
-  background-color: rgba(35, 35, 35, 0.9);
-  padding: 64px 32px;
-  max-width: 543px;
-  margin: 50px 0 0 0;
 }
 
 .review h2 {
@@ -604,8 +583,18 @@ form button:hover, form button:focus {
   background-color: #333333;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.review .card .card-body {
+@media (min-width: 900px) {
+  .review .card {
+    flex-direction: row;
+  }
+}
+.review .card-image {
+  max-width: 100%;
+}
+.review .card-body {
   padding: 49px 25px 39px 62px;
 }
 .review i {
@@ -634,6 +623,10 @@ footer h2 {
   font-weight: 700;
   line-height: 26px;
   padding-top: 50px;
+}
+footer h2:hover, footer h2:focus {
+  cursor: pointer;
+  color: #2980b9;
 }
 footer p {
   font-size: 16px;
