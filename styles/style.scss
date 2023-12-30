@@ -129,11 +129,6 @@ form {
     }
 }
 
-footer {
-    height: 100vh;
-}
-
-
 //SECTION 2
 .choose {
     
@@ -345,5 +340,43 @@ footer {
         font-size: 20px;
         font-weight: 400;
         line-height: 26px;
+    }
+}
+
+//FOOTER
+footer {
+    padding: 50px 0 50px                                       0;
+    background-color: #232323;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26px;
+        padding-top: 50px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 1.6px; 
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+        margin-top: 20px;
+        
+        i {
+            width: 40px;
+            
+            &:hover,
+            &:focus {
+                cursor: pointer;
+                color: #2980b9;
+            }
+        }
     }
 }
