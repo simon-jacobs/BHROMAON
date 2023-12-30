@@ -468,14 +468,56 @@ form button:hover, form button:focus {
   }
 }
 
-.cta .container button {
+.search {
+  padding: 50px 0;
+  background-color: #333;
+}
+.search-shape {
+  background-image: url("../images/shape.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  width: 100%;
+  height: 95px;
+  margin-bottom: -50px;
+}
+.search-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  position: relative;
+}
+.search-items div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+.search-items div span {
+  background-color: #333;
+  border-radius: 100%;
+  padding: 20px;
+}
+.search-items div img {
+  width: 100%;
+  max-width: 60px;
+}
+.search-items div p {
+  color: #E8E8E8;
+  text-align: center;
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.spain .container button {
   background-color: #5474FD;
   border: none;
   width: 228px;
   height: 63px;
   font-family: "Aleo", serif;
 }
-.cta .container h3 {
+.spain .container h3 {
   margin: 0 0 23px 0;
   color: #E8E8E8;
   font-size: 20px;
@@ -484,7 +526,7 @@ form button:hover, form button:focus {
   line-height: 26px;
   letter-spacing: 1.5px;
 }
-.cta .container h2 {
+.spain .container h2 {
   margin: 0 0 13px 0;
   color: #FFF;
   font-size: 20px;
@@ -492,7 +534,7 @@ form button:hover, form button:focus {
   font-weight: 400;
   line-height: 26px;
 }
-.cta .container p {
+.spain .container p {
   margin: 0 0 46px 0;
   color: #E8E8E8;
   font-size: 16px;
@@ -500,25 +542,25 @@ form button:hover, form button:focus {
   font-weight: 400;
   line-height: 26px;
 }
-.cta .card {
+.spain .card {
   background-color: rgba(35, 35, 35, 0.9);
   padding: 64px 32px;
   max-width: 543px;
   margin: 50px 0 0 0;
 }
 
-.cta2 .container {
+.spain-two .container {
   display: flex;
   justify-content: flex-end;
 }
-.cta2 .container button {
+.spain-two .container button {
   background-color: #5474FD;
   border: none;
   width: 228px;
   height: 63px;
   font-family: "Aleo", serif;
 }
-.cta2 .container h3 {
+.spain-two .container h3 {
   margin: 0 0 23px 0;
   color: #E8E8E8;
   font-size: 20px;
@@ -527,7 +569,7 @@ form button:hover, form button:focus {
   line-height: 26px;
   letter-spacing: 1.5px;
 }
-.cta2 .container h2 {
+.spain-two .container h2 {
   margin: 0 0 13px 0;
   color: #FFF;
   font-size: 20px;
@@ -535,7 +577,7 @@ form button:hover, form button:focus {
   font-weight: 400;
   line-height: 26px;
 }
-.cta2 .container p {
+.spain-two .container p {
   margin: 0 0 46px 0;
   color: #E8E8E8;
   font-size: 16px;
@@ -543,7 +585,7 @@ form button:hover, form button:focus {
   font-weight: 400;
   line-height: 26px;
 }
-.cta2 .card {
+.spain-two .card {
   background-color: rgba(35, 35, 35, 0.9);
   padding: 64px 32px;
   max-width: 543px;
@@ -584,7 +626,7 @@ form button:hover, form button:focus {
 }
 
 footer {
-  padding: 50px 0 50px 0;
+  padding: 50px 0;
   background-color: #232323;
 }
 footer h2 {
